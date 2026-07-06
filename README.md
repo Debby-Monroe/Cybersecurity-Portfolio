@@ -42,5 +42,5 @@ I look at security telemetry through a dual lens: understanding the deep technic
 
 ## 📬 Let's Connect
 
-*   **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+*   **LinkedIn:** [linkedin.com/in/your-profile](www.linkedin.com/in/deborah-lawson-6432b936a)
 *   **Professional Portfolio Index:** You are currently exploring it! Check out my repositories for raw documentation, scripts, and deployment configurations.
