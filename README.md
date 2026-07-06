@@ -22,7 +22,7 @@ I look at security telemetry through a dual lens: understanding the deep technic
 
 ## 🔬 Active Security Projects
 
-### 🚨 [Automated Brute-Force Detection & Telemetry Pipeline (Elastic Cloud SIEM)](https://github.com/YOUR_USERNAME/YOUR_SIEM_REPO_NAME)
+### 🚨 [Automated Brute-Force Detection & Telemetry Pipeline (Elastic Cloud SIEM)](https://github.com/Debby-Monroe/Cybersecurity-Portfolio)
 *   **The Mission:** Engineered an absolute log ingestion infrastructure mapping an Ubuntu endpoint directly to a cloud-hosted Elastic SIEM instance. Simulated an active dictionary attack to profile threat actor behavior and analyze raw endpoint telemetry.
 *   **Core Skills:** Fleet Management, Elastic Agent Deployment, Linux System Auditing (`auth.log`), KQL Query Optimization.
 
@@ -42,5 +42,5 @@ I look at security telemetry through a dual lens: understanding the deep technic
 
 ## 📬 Let's Connect
 
-*   **LinkedIn:** [linkedin.com/in/your-profile](www.linkedin.com/in/deborah-lawson-6432b936a)
+*   **LinkedIn:** [www.linkedin.com/in/deborah-lawson-6432b936a](https://www.linkedin.com/in/deborah-lawson-6432b936a)
 *   **Professional Portfolio Index:** You are currently exploring it! Check out my repositories for raw documentation, scripts, and deployment configurations.
