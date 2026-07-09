@@ -1,9 +1,19 @@
-# Cybersecurity-Portfolio
-A professional portfolio showcasing cloud-native security labs, log analysis projects, and automated threat detection pipelines.
-# Hello, I'm a Security Analyst & Compliance-Driven Defender 🔍🛡️
+# Deborah Lawson | Cybersecurity Analyst Portfolio
 
-Welcome to my security operations portfolio. I am a detail-oriented professional bridging the gap between structured analytical methodology and technical threat detection. 
+A results-driven professional combining a structured analytical methodology with technical threat detection and log analysis to secure enterprise environments.
 
+## 🚀 Featured Cyber Security Projects
+
+| Project Name | Core Competencies | Live Documentation |
+| :--- | :--- | :--- |
+| **Automated Brute-Force Detection Pipeline** | Elastic Cloud SIEM, Log Ingestion, KQL, Threat Isolation | [View Lab Setup & Telemetry](#objective) |
+| **Wireshark Network Traffic Analysis** | Protocol Mechanics, Session Validation, Packet Analysis | [View Standalone Project Repository ↗](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
+
+---
+
+## Hello, I'm a Security Analyst & Compliance-Driven Defender 🔍🛡️
+
+Welcome to my security operations portfolio. I am a detail-oriented professional bridging the gap between structured analytical methodology and technical threat detection.
 Coming from a professional background rooted in high-stakes banking operations, complex corporate workflows, and rigorous compliance analysis, I specialize in parsing dense data streams to locate anomalies, identify risks, and enforce security integrity. I have recently transitioned my analytical foundation into the technical domain, graduating from the **Google Cybersecurity Professional program** and engineering my own cloud-native security environments.
 
 I look at security telemetry through a dual lens: understanding the deep technical mechanics of an exploit while maintaining a sharp focus on the broader operational risk and corporate impact.
