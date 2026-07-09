@@ -60,7 +60,7 @@ event.outcome : "failure"
 *   **The Mission:** Engineered an absolute log ingestion infrastructure mapping an Ubuntu endpoint directly to a cloud-hosted Elastic SIEM instance. Simulated an active dictionary attack to profile threat actor behavior and analyze raw endpoint telemetry.
 *   **Core Skills:** Fleet Management, Elastic Agent Deployment, Linux System Auditing (`auth.log`), KQL Query Optimization.
 
-### 🌐 [Network Traffic Analysis & Protocol Triage (Coming Soon)]()
+### 🌐 [Network Traffic Analysis & Protocol Triage](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis)
 *   **The Mission:** Dissecting malicious packet captures (PCAPs) to identify command-and-control (C2) traffic beacons, unauthorized file exfiltration, and local network compromises.
 *   **Core Skills:** Wireshark filtering, OSI Model mapping, protocol anomaly identification.
 
