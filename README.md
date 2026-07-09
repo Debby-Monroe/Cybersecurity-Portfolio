@@ -54,8 +54,9 @@ On June 29, 2026, an automated alert triggered within the Elastic Cloud SIEM env
 #### 3. Investigative Methodology (KQL Analysis)
 To isolate the malicious telemetry within Kibana, the following Kibana Query Language (KQL) string was executed to filter out background noise and focus strictly on the authentication anomalies:
 
-``kql
+```kql
 event.outcome : "failure"
+```
 *   **The Mission:** Engineered an absolute log ingestion infrastructure mapping an Ubuntu endpoint directly to a cloud-hosted Elastic SIEM instance. Simulated an active dictionary attack to profile threat actor behavior and analyze raw endpoint telemetry.
 *   **Core Skills:** Fleet Management, Elastic Agent Deployment, Linux System Auditing (`auth.log`), KQL Query Optimization.
 
