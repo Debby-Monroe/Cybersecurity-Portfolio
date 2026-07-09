@@ -6,9 +6,8 @@ A results-driven professional combining a structured analytical methodology with
 
 | Project Name | Core Competencies | Live Documentation |
 | :--- | :--- | :--- |
-| **Automated Brute-Force Detection Pipeline** | Elastic Cloud SIEM, Log Ingestion, KQL, Threat Isolation | [View Lab Setup & Telemetry](#objective) |
-| **Wireshark Network Traffic Analysis** | Protocol Mechanics, Session Validation, Packet Analysis | [View Standalone Project Repository ↗](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
-| **Automated Brute-Force Detection Pipeline** | Elastic Cloud SIEM, Log Ingestion, KQL, Threat Isolation | [View Lab Setup & Telemetry](#-incident-investigation-report-case-ref-2026-06-bf) |
+| [Automated Brute-Force Detection Pipeline](#-automated-brute-force-detection--telemetry-pipeline-elastic-cloud-siem) | Elastic Cloud SIEM, Log Ingestion, KQL, Threat Isolation | [View Lab Setup & Telemetry](#-incident-investigation-report-case-ref-2026-06-bf) |
+| [Wireshark Network Traffic Analysis](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) | Protocol Mechanics, Session Validation, Packet Analysis | [View Standalone Project Repository ↗](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
 ---
 
 ## Hello, I'm a Security Analyst & Compliance-Driven Defender 🔍🛡️
