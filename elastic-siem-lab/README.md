@@ -84,6 +84,7 @@ The Elastic SIEM environment successfully captured and indexed 47 authentication
 ### Conclusion
 
 The investigation demonstrated the effectiveness of Elastic SIEM in detecting and analyzing suspicious authentication activity. The simulated attack generated identifiable indicators that could assist security analysts in recognizing and responding to potential brute-force or dictionary-based attacks in a production environment.
+
 <img width="540" height="657" alt="Screenshot 2026-07-06 at 7 29 18 PM" src="https://github.com/user-attachments/assets/c4322e55-7106-44f8-97d8-a1d232e824b8" />
 
 
