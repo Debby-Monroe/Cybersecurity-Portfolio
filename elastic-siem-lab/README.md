@@ -63,14 +63,27 @@ Successfully demonstrated the ability to generate, detect, investigate, and docu
 
 ## Analyst Findings & Security Insights
 
-The telemetry pipeline successfully captured **47 total authentication failures**. Upon granular inspection of the data fields, a distinct attack signature was mapped:
+The Elastic SIEM environment successfully captured and indexed 47 authentication failure events generated during the simulation. Analysis of the event data revealed a pattern consistent with an automated password-guessing attack targeting multiple user accounts.
 
-| Metric | Analytical Value |
-| --- | --- |
-| **Attack Signature** | Rapid, automated credential stuffing / multi-account dictionary attack. |
-| **Target Profiles** | System default accounts (`admin`, `database`, `guest`, `support`, `test`). |
-| **Anomalous Field** | High concentration of failure logs containing the user string `deborah-lawson`. |
+| Metric | Observation |
+|----------|-------------|
+| Attack Pattern | Automated multi-account dictionary attack simulation |
+| Authentication Failures | 47 failed login attempts detected |
+| Targeted Accounts | admin, database, guest, support, test |
+| Timeline | Authentication failures occurred in rapid succession |
+| Detection Method | KQL query: `event.outcome:"failure"` |
+| Log Source | Ubuntu endpoint monitored by Elastic Agent |
 
+### Security Analysis
+
+- Multiple authentication failures were observed across several commonly used account names.
+- The frequency and timing of the events suggest automated activity rather than normal user behavior.
+- Event logs provided clear visibility into the failed login attempts, enabling rapid investigation and triage.
+- Elastic Security successfully captured, indexed, and presented the authentication events for analysis.
+
+### Conclusion
+
+The investigation demonstrated the effectiveness of Elastic SIEM in detecting and analyzing suspicious authentication activity. The simulated attack generated identifiable indicators that could assist security analysts in recognizing and responding to potential brute-force or dictionary-based attacks in a production environment.
 <img width="540" height="657" alt="Screenshot 2026-07-06 at 7 29 18 PM" src="https://github.com/user-attachments/assets/c4322e55-7106-44f8-97d8-a1d232e824b8" />
 
 
