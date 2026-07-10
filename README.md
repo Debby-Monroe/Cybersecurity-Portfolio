@@ -34,14 +34,32 @@ I approach cybersecurity through a dual lens: understanding the technical mechan
 
 ---
 
-## 🛠️ Tech Stack & Lab Environment
+## Tech Stack & Lab Environment
 
-*   **Security Operations (SecOps):** Elastic Cloud SIEM, Log Analysis, Incident Triaging, KQL (Kibana Query Language)
-*   **Operating Systems & Virtualization:** Ubuntu Linux Server administration, macOS, Virtual Machine management
-*   **Networking & Traffic Analysis:** Packet capture analysis, protocol inspection, network telemetry mapping
-*   **Automation & Scripting:** Defensive Bash tooling, Python string parsing, automated security validation scripts
-*   **Frameworks & Governance:** NIST Cybersecurity Framework (CSF), Regulatory Compliance Mapping, Risk Mitigation Documentation
+### SIEM & Security Tools
+- Elastic Cloud
+- Kibana
+- Elastic Agent
+- Fleet Management
 
+### Operating Systems
+- Ubuntu Linux
+- macOS
+
+### Cloud
+- Google Cloud Platform (GCP)
+
+### Languages & Scripting
+- Bash
+- Python
+
+### Networking
+- SSH
+- TCP/IP
+- Linux Authentication Logs
+
+### Frameworks
+- NIST Cybersecurity Framework (CSF)
 ---
 
 ## 🔬 Active Security Projects
