@@ -82,13 +82,6 @@ This lab helped me better understand:
 - SSH Authentication
 - KQL
 - Incident Investigation
-##  Ingestion Infrastructure Setup
-
-- Deployed an Elastic Cloud environment to function as a centralized Security Information and Event Management (SIEM) platform.
-- Configured a Fleet Management policy to manage endpoint telemetry and security monitoring.
-- Installed Elastic Agent on an Ubuntu endpoint and enrolled it into Fleet using a secure enrollment token.
-- Validated successful agent enrollment and confirmed continuous log ingestion from the endpoint.
-- Established a foundation for security monitoring, threat detection, and incident investigation within Elastic Security.
 
 ## Key Result
 
