@@ -8,14 +8,13 @@ The investigation focused on identifying suspicious login activity, analyzing au
 
 ## Tools & Environment Architecture
 
-| Component | Details |
-|-----------|---------|
-| SIEM Platform | Elastic Cloud with Kibana Security deployed through Google Cloud Platform (GCP) |
-| Endpoint System | Ubuntu Linux Virtual Machine (ARM64 Architecture) |
-| Telemetry Collection | Elastic Agent managed through Fleet Management |
-| Attack Simulation | Automated dictionary attack script generating failed authentication events |
-| Log Source | Linux authentication logs (`/var/log/auth.log`) collected for security analysis |
+### 🖥️ Lab Architecture Components
 
+* **SIEM Platform:** Elastic Cloud with Kibana Security (Deployed via GCP)
+* **Endpoint System:** Ubuntu Linux Virtual Machine (ARM64 Architecture)
+* **Telemetry Collection:** Elastic Agent managed through Fleet Management
+* **Attack Simulation:** Automated dictionary attack script generating failed authentication events
+* **Log Source:** Linux authentication logs (`/var/log/auth.log`) collected for security analysis
 ### Architecture Overview
 
 The lab environment consisted of an Ubuntu Linux endpoint connected to an Elastic Cloud SIEM platform through Elastic Agent. Fleet Management was used to manage endpoint configuration and telemetry collection. Authentication logs were forwarded to Kibana for investigation and analysis of simulated brute-force activity.
