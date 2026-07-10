@@ -88,5 +88,8 @@ The investigation demonstrated the effectiveness of Elastic SIEM in detecting an
 <img width="540" height="657" alt="Screenshot 2026-07-06 at 7 29 18 PM" src="https://github.com/user-attachments/assets/c4322e55-7106-44f8-97d8-a1d232e824b8" />
 
 
-### Key Takeaway
-The threat actor was not targeting a single user; instead, they were sweeping for high-privilege default accounts (`database`, `admin`) to establish an initial foothold and achieve rapid privilege escalation. Identifying this pattern allows security teams to quickly enforce account lockout policies and audit default, unhardened credentials.
+## Key Takeaway
+
+The simulated threat activity was not focused on a single user account. Instead, multiple commonly targeted default and potentially privileged accounts (`database`, `admin`, `guest`) were tested in rapid succession, indicating a dictionary-based account discovery and password-guessing attempt.
+
+Recognizing this attack pattern allows security teams to prioritize defensive actions such as enforcing account lockout policies, removing or securing unused default accounts, and reviewing authentication monitoring rules for similar activity.
