@@ -10,12 +10,27 @@ A results-driven professional combining a structured analytical methodology with
 | [Wireshark Network Traffic Analysis](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) | Protocol Mechanics, Session Validation, Packet Analysis | [View Standalone Project Repository ↗](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
 ---
 
-## Hello, I'm a Security Analyst & Compliance-Driven Defender 🔍🛡️
+# Security Analyst & Compliance-Driven Defender 🔍🛡️
 
-Welcome to my security operations portfolio. I am a detail-oriented professional bridging the gap between structured analytical methodology and technical threat detection.
-Coming from a professional background rooted in high-stakes banking operations, complex corporate workflows, and rigorous compliance analysis, I specialize in parsing dense data streams to locate anomalies, identify risks, and enforce security integrity. I have recently transitioned my analytical foundation into the technical domain, graduating from the **Google Cybersecurity Professional program** and engineering my own cloud-native security environments.
+Welcome to my cybersecurity portfolio.
 
-I look at security telemetry through a dual lens: understanding the deep technical mechanics of an exploit while maintaining a sharp focus on the broader operational risk and corporate impact.
+I am a detail-oriented Security Analyst focused on threat detection, security operations, and compliance-driven defense. With a professional background in high-stakes banking operations, complex corporate workflows, and structured risk analysis, I bring a strong foundation in identifying anomalies, investigating operational risks, and maintaining data integrity in regulated environments.
+
+I have expanded this analytical foundation into cybersecurity by completing the **Google Cybersecurity Professional Certificate** and developing hands-on experience through self-engineered security environments. My projects involve building cloud-based SIEM solutions, analyzing authentication telemetry, investigating suspicious activity, and simulating adversarial techniques to better understand real-world attack patterns.
+
+I approach cybersecurity through a dual lens: understanding the technical mechanics behind threats while evaluating their broader business and operational impact. My focus is transforming security data into actionable intelligence that helps organizations detect threats, strengthen controls, and improve overall security resilience.
+
+**Core Focus Areas:**
+
+* Security Operations Center (SOC) Analysis
+* SIEM Deployment & Security Monitoring
+* Log Analysis & Threat Investigation
+* Linux Security & Authentication Monitoring
+* Incident Detection & Response Workflows
+* Compliance & Risk Assessment
+* Security Documentation & Reporting
+* Threat Intelligence Fundamentals
+
 
 ---
 
