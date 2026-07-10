@@ -21,13 +21,67 @@ The investigation focused on identifying suspicious login activity, analyzing au
 The lab environment consisted of an Ubuntu Linux endpoint connected to an Elastic Cloud SIEM platform through Elastic Agent. Fleet Management was used to manage endpoint configuration and telemetry collection. Authentication logs were forwarded to Kibana for investigation and analysis of simulated brute-force activity.
 
 ---
+## Technical Execution
 
-## Technical Execution & Walkthrough
-## Fleet Management was used to manage endpoint configuration and telemetry collection. Authentication logs were forwarded to Kibana for investigation and analysis of simulated brute-force activity.
+### 1. Deployed Elastic Cloud
+
+- Created an Elastic Cloud deployment.
+- Accessed Kibana Security.
+- Configured Fleet Management.
+- Generated an enrollment token for the endpoint.
+
+### 2. Connected the Ubuntu Endpoint
+
+- Created an Ubuntu Linux virtual machine.
+- Installed Elastic Agent.
+- Enrolled the endpoint into Fleet.
+- Verified the agent was healthy and sending telemetry.
+
+### 3. Collected Authentication Logs
+
+- Enabled the System integration.
+- Verified Linux authentication logs (`/var/log/auth.log`) were being ingested into Elasticsearch.
+- Confirmed log visibility in Kibana Discover.
+
+### 4. Simulated a Brute-Force Attack
+
+- Executed an automated SSH dictionary attack against the Ubuntu VM.
+- Generated multiple failed login attempts.
+- Verified the authentication events appeared in Kibana.
+
+### 5. Investigated the Events
+
+Using Kibana Discover, I:
+
+- Filtered failed authentication events.
+- Reviewed timestamps and source IP addresses.
+- Observed repeated failed login attempts consistent with brute-force activity.
+
 ---
 
-## Technical Execution & Walkthrough
+## What I Learned
 
+This lab helped me better understand:
+
+- How Elastic Agent collects endpoint telemetry.
+- How Fleet manages endpoint configurations.
+- How Linux authentication logs are ingested into Elastic Cloud.
+- How Kibana can be used to investigate failed login attempts and identify suspicious authentication activity.
+
+---
+
+## Skills Practiced
+
+- Elastic Cloud
+- Kibana Security
+- Fleet Management
+- Elastic Agent
+- Ubuntu Linux
+- SIEM Monitoring
+- Log Analysis
+- SSH Authentication
+- KQL
+- Incident Investigation
 ##  Ingestion Infrastructure Setup
 
 - Deployed an Elastic Cloud environment to function as a centralized Security Information and Event Management (SIEM) platform.
