@@ -14,7 +14,7 @@ This project establishes an enterprise-grade log ingestion pipeline to detect an
 
 ## Technical Execution & Walkthrough
 
-## 1 Ingestion Infrastructure Setup
+##  Ingestion Infrastructure Setup
 
 - Deployed an Elastic Cloud environment to function as a centralized Security Information and Event Management (SIEM) platform.
 - Configured a Fleet Management policy to manage endpoint telemetry and security monitoring.
@@ -28,13 +28,34 @@ Successfully onboarded an Ubuntu endpoint into Elastic Security, enabling centra
 <img width="1412" height="883" alt="Screenshot 2026-07-06 at 7 13 51 PM" src="https://github.com/user-attachments/assets/9797e8b1-c63d-4eb7-afc7-d5a9616f94d2" />
 
 
-### 2. Adversarial Simulation
-*   Executed an automated dictionary script on the endpoint to generate a rapid succession of failed authentication attempts, simulating an unauthenticated external threat actor attempting to guess local credentials.
+## Adversarial Simulation
 
-### 3. SIEM Triaging & Log Analysis
-*   Pivoted to the Kibana **Discover** panel to analyze raw log indices, applying a temporal filter to capture the spike in data.
-*   Utilized the KQL query statement `event.outcome : "failure"` to filter out routine system noise and isolate the unauthorized activity.
+- Simulated a password-guessing attack by generating multiple failed authentication attempts on the Ubuntu endpoint.
+- Created a series of unsuccessful login events to emulate unauthorized access attempts against local user accounts.
+- Generated security-relevant telemetry for analysis within the Elastic SIEM environment.
 
+## SIEM Investigation & Log Analysis
+
+- Investigated collected endpoint logs using Kibana Discover.
+- Applied time-based filtering to identify spikes in authentication-related activity.
+- Utilized the KQL query:
+
+  event.outcome:"failure"
+
+  to isolate failed authentication events from normal system activity.
+- Reviewed event details, timestamps, and targeted accounts to assess the nature of the activity.
+- Confirmed successful log ingestion and visibility of authentication failures within Elastic Security.
+
+## Findings
+
+- Multiple failed authentication events were detected during the testing period.
+- Authentication failures targeted several user accounts in rapid succession.
+- The activity pattern was consistent with a password-guessing or brute-force attack simulation.
+- Elastic Security successfully captured and indexed the events, enabling rapid investigation and triage.
+
+## Outcome
+
+Successfully demonstrated the ability to generate, detect, investigate, and document suspicious authentication activity using Elastic SIEM, Kibana Discover, and KQL-based log analysis.
 <img width="1366" height="827" alt="Screenshot 2026-07-06 at 7 15 41 PM" src="https://github.com/user-attachments/assets/cb8628d6-b87a-4110-a269-ff4074f5b2e2" />
 
 
