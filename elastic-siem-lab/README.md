@@ -14,10 +14,17 @@ This project establishes an enterprise-grade log ingestion pipeline to detect an
 
 ## Technical Execution & Walkthrough
 
-### 1. Ingestion Infrastructure Setup
-*   Deployed a centralized Elastic Cloud instance and configured a new agent policy within **Fleet Management**.
-*   Initialized an absolute deployment script on the target Ubuntu endpoint, installing the **Elastic Agent background service** and establishing a secure, encrypted telemetry stream to the cloud instance using an enrollment token.
+## 1 Ingestion Infrastructure Setup
 
+- Deployed an Elastic Cloud environment to function as a centralized Security Information and Event Management (SIEM) platform.
+- Configured a Fleet Management policy to manage endpoint telemetry and security monitoring.
+- Installed Elastic Agent on an Ubuntu endpoint and enrolled it into Fleet using a secure enrollment token.
+- Validated successful agent enrollment and confirmed continuous log ingestion from the endpoint.
+- Established a foundation for security monitoring, threat detection, and incident investigation within Elastic Security.
+
+## Key Result
+
+Successfully onboarded an Ubuntu endpoint into Elastic Security, enabling centralized collection and analysis of authentication, process, and system activity logs.
 <img width="1412" height="883" alt="Screenshot 2026-07-06 at 7 13 51 PM" src="https://github.com/user-attachments/assets/9797e8b1-c63d-4eb7-afc7-d5a9616f94d2" />
 
 
