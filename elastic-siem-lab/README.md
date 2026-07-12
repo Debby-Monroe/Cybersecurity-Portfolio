@@ -1,90 +1,114 @@
 # 🚨 Automated Brute-Force Detection & Telemetry Pipeline (Elastic Cloud SIEM)
 
-## 🛠️ Project Overview
-This project shows how to set up a cloud-based Elastic SIEM to collect security logs from a remote Linux server. The goal of this lab was to configure log collection using the Elastic Agent, simulate a brute-force password attack, and investigate the failed login logs using Kibana Query Language (KQL).
+## 🎯 Objective
 
-### 🎯 Core Skills Demonstrated:
-* **SIEM Setup & Management:** Registering endpoints and installing cloud-managed Elastic Agents using Fleet.
-* **Log Ingestion & Monitoring:** Monitoring Linux authentication logs (`/var/log/auth.log`) to spot unusual activity.
-* **Incident Analysis & Reporting:** Using KQL searches to isolate attack patterns and document the findings.
+This project demonstrates the deployment of an Elastic Cloud SIEM environment to collect and analyze security logs from a Linux endpoint. The objective was to simulate a brute-force password attack, configure centralized log collection using Elastic Agent, and investigate authentication failures using Kibana Query Language (KQL).
+
+The investigation focused on identifying suspicious login activity, analyzing authentication patterns, and understanding how SIEM platforms can be used to detect and investigate unauthorized access attempts.
 
 ---
 
-## 🧱 Lab Architecture & Tooling
-* **SIEM Platform:** Elastic Cloud with Kibana Security (Deployed on GCP)
-* **Endpoint System:** Ubuntu Linux VM (ARM64 Architecture)
-* **Log Collection Tool:** Elastic Agent managed through Fleet Management
-* **Monitored Log Source:** Linux Authentication Logs (`auth.log`)
+## 🛠️ Tools & Environment
+
+- **SIEM Platform:** Elastic Cloud with Kibana Security
+- **Endpoint:** Ubuntu Linux Virtual Machine (ARM64)
+- **Telemetry Collection:** Elastic Agent managed through Fleet
+- **Log Source:** Linux Authentication Logs (`/var/log/auth.log`)
+- **Query Language:** Kibana Query Language (KQL)
 
 ---
 
-## ⚡ Technical Execution Steps
+## 🏗️ Lab Architecture
 
-### 1. Setting Up the SIEM Configuration
-* Created an Elastic Cloud account and opened the Kibana Security workspace.
-* Configured the Fleet Management page and generated enrollment tokens for the server.
-* Installed the Elastic Agent onto the Ubuntu virtual machine so it could start sending logs to the cloud.
+The environment consisted of an Ubuntu Linux endpoint connected to Elastic Cloud through Elastic Agent. Fleet Management was used to manage endpoint enrollment and telemetry collection. Authentication logs were forwarded to Kibana for monitoring and investigation.
 
-### 2. Verifying Log Ingestion
-* Turned on the Linux System integration policy inside Fleet.
-* Pointed the agent to look at the `/var/log/auth.log` file path.
-* Verified that the real-time logs were showing up properly inside the Kibana Discover dashboard.
+### Endpoint Successfully Connected to Elastic Fleet
 
-<img width="1412" height="883" alt="Screenshot 2026-07-06 at 7 13 51 PM" src="https://github.com/user-attachments/assets/9797e8b1-c63d-4eb7-afc7-d5a9616f94d2" />
+<img width="1412" height="883" alt="Elastic Fleet Agent Connected" src="https://github.com/user-attachments/assets/9797e8b1-c63d-4eb7-afc7-d5a9616f94d2" />
 
 ---
 
-## 🕵️‍♂️ Incident Investigation Report: Case Ref #2026-06-BF
+## ⚙️ Methodology
 
-**Status:** Closed / Resolved  
-**Severity:** Medium  
-**Assigned Analyst:** Deborah Lawson (SOC Analyst)
+### 1. Deploy Elastic Cloud
 
-### 1. Executive Summary
-On June 29, 2026, an automated password-guessing attack was simulated against the monitored Ubuntu server to generate security logs. The attack created a large spike in failed SSH login attempts. 
+- Created an Elastic Cloud deployment.
+- Accessed Kibana Security.
+- Configured Fleet Management.
+- Generated an enrollment token.
 
-The security pipeline successfully caught **47 failed login events** in just a few seconds. The attack targeted multiple default and administrative accounts. No successful logins occurred, and the server remained safe and secure.
+### 2. Connect the Ubuntu Endpoint
 
-### 2. Detection Timeline & Footprint
-* **Time of Attack:** 2026-06-29 @ 19:49:26 – 19:49:32 UTC
-* **Total Volume:** 47 failed login attempts
-* **Target Accounts Checked:** `admin`, `database`, `guest`, `support`, `test`
-* **Source IP Address:** `127.0.0.1` (Local simulation environment)
-* **Target System:** `deborah-lawson-qemu-virtual-machine`
+- Created an Ubuntu Linux virtual machine.
+- Installed Elastic Agent.
+- Enrolled the endpoint into Fleet.
+- Verified healthy telemetry collection.
 
-### 3. Kibana Query Language (KQL) Filtering
-To separate the attack traffic from normal background system logs, I applied this specific filter inside the Kibana Discover workspace:
+### 3. Collect Authentication Logs
+
+- Enabled the Linux System integration.
+- Collected authentication logs from `/var/log/auth.log`.
+- Verified log ingestion within Kibana Discover.
+
+### 4. Simulate Brute-Force Activity
+
+- Generated multiple failed SSH authentication attempts.
+- Simulated password-guessing behavior against local accounts.
+- Created security telemetry for investigation.
+
+### 5. Investigate with Kibana
+
+Applied the following KQL query to isolate failed authentication events:
 
 ```kql
-event.outcome : "failure"
+event.outcome:"failure"
 ```
 
-This query made it easy to filter out normal system logs so I could immediately look at the timestamps, how often the attacks happened, and which user accounts were targeted.
+### Failed Authentication Events in Kibana
+
+<img width="1366" height="827" alt="Failed Authentication Events" src="https://github.com/user-attachments/assets/cb8628d6-b87a-4110-a269-ff4074f5b2e2" />
 
 ---
 
-## 📊 Analyst Findings & Security Insights
+## 📊 Findings
 
-The logs clearly show an automated password-guessing attack rather than a regular user making a typo. I know this because multiple different usernames were tried in a very short amount of time.
+The investigation identified a pattern consistent with an automated password-guessing attack targeting multiple user accounts.
 
-| Investigation Metric | Telemetry Observation Summary |
-| :--- | :--- |
-| **Attack Type** | Automated password-guessing attack |
-| **Total Logged Failures** | 47 separate failed login events |
-| **Targeted Accounts** | Generic names (`admin`, `database`, `guest`, `support`, `test`) |
-| **Time Frame** | All attacks happened sequentially within a few seconds |
-| **Log Source** | Collected from the Ubuntu `auth.log` file using Elastic Agent |
+| Metric | Observation |
+|----------|-------------|
+| Attack Type | Automated password-guessing attack |
+| Authentication Failures | 47 failed login attempts |
+| Targeted Accounts | admin, database, guest, support, test |
+| Source IP | 127.0.0.1 (local simulation) |
+| Detection Method | KQL query: `event.outcome:"failure"` |
+| Log Source | Ubuntu authentication logs |
+
+### Authentication Failure Distribution
+
+<img width="540" height="657" alt="Authentication Failure Analysis" src="https://github.com/user-attachments/assets/c4322e55-7106-44f8-97d8-a1d232e824b8" />
 
 ---
 
-## 🛑 Strategic Recommendations
+## 🔐 Security Recommendations
 
-* **Enforce Account Lockout Policies:** Set a limit on failed login attempts to automatically freeze an account if someone inputs the wrong password too many times in a row.
-* **Disable Default Accounts:** Turn off or remove generic account names like `admin` and `guest` so attackers do not have easy, predictable targets to scan.
-* **Set Up Monitoring Alerts:** Configure alert thresholds in Elastic SIEM to flag an endpoint if it experiences more than 10 failed login attempts within a single minute.
+- Implement account lockout policies to limit repeated login attempts.
+- Disable or secure unused default accounts.
+- Configure SIEM alerts for excessive authentication failures.
+- Enable multi-factor authentication (MFA) where possible.
+- Regularly review authentication logs for suspicious activity.
 
 ---
 
 ## 📝 Key Takeaway
 
-This project gave me hands-on experience with the entire security monitoring process—from setting up log pipelines to investigating real threat data and writing a summary report. It proves my ability to use a SIEM to track suspicious login activity, identify basic attack patterns, and suggest ways to keep a system safe.
+This project provided hands-on experience deploying a cloud-based SIEM, onboarding an endpoint, collecting security telemetry, and investigating authentication failures using KQL.
+
+The simulated attack targeted multiple commonly used account names (`admin`, `database`, `guest`, `support`, and `test`) within a short timeframe, demonstrating a password-guessing attack pattern. Elastic Security successfully captured and indexed the events, enabling rapid investigation and analysis.
+
+---
+
+## 📄 Additional Documentation
+
+A detailed incident investigation report is available in:
+
+**incident-report.md**
