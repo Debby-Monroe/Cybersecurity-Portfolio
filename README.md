@@ -1,13 +1,7 @@
 # Deborah Lawson | Cybersecurity Analyst Portfolio
 
-A results-driven professional combining a structured analytical methodology with technical threat detection and log analysis to secure enterprise environments.
+A results-driven professional combining a structured analytical methodology with technical threat detection, log analysis, and host hardening to secure enterprise environments.
 
-## 🚀 Featured Cyber Security Projects
-
-| Project Name | Core Competencies | Live Documentation |
-| :--- | :--- | :--- |
-| [Automated Brute-Force Detection Pipeline](#-automated-brute-force-detection--telemetry-pipeline-elastic-cloud-siem) | Elastic Cloud SIEM, Log Ingestion, KQL, Threat Isolation | [View Lab Setup & Telemetry](#-incident-investigation-report-case-ref-2026-06-bf) |
-| [Wireshark Network Traffic Analysis](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) | Protocol Mechanics, Session Validation, Packet Analysis | [View Standalone Project Repository ↗](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
 ---
 
 # Security Analyst & Compliance-Driven Defender 🔍🛡️
@@ -16,152 +10,40 @@ Welcome to my cybersecurity portfolio.
 
 I am a detail-oriented Security Analyst focused on threat detection, security operations, and compliance-driven defense. With a professional background in high-stakes banking operations, complex corporate workflows, and structured risk analysis, I bring a strong foundation in identifying anomalies, investigating operational risks, and maintaining data integrity in regulated environments.
 
-I have expanded this analytical foundation into cybersecurity by completing the **Google Cybersecurity Professional Certificate** and developing hands-on experience through self-engineered security environments. My projects involve building cloud-based SIEM solutions, analyzing authentication telemetry, investigating suspicious activity, and simulating adversarial techniques to better understand real-world attack patterns.
+I have expanded this analytical foundation into cybersecurity by completing the **Google Cybersecurity Professional Certificate** and developing hands-on experience through self-engineered security environments. My projects involve building cloud-based SIEM solutions, configuring host defense policies, inspecting packet captures, and analyzing raw security telemetry.
 
 I approach cybersecurity through a dual lens: understanding the technical mechanics behind threats while evaluating their broader business and operational impact. My focus is transforming security data into actionable intelligence that helps organizations detect threats, strengthen controls, and improve overall security resilience.
 
-**Core Focus Areas:**
+---
 
-* Security Operations Center (SOC) Analysis
-* SIEM Deployment & Security Monitoring
-* Log Analysis & Threat Investigation
-* Linux Security & Authentication Monitoring
-* Incident Detection & Response Workflows
-* Compliance & Risk Assessment
-* Security Documentation & Reporting
-* Threat Intelligence Fundamentals
+## 🚀 Featured Cybersecurity Projects
 
+| Project Focus | Technical Competencies | Live Documentation |
+| :--- | :--- | :--- |
+| **SIEM & Incident Investigation** | Elastic Cloud SIEM, Log Ingestion, KQL, Threat Isolation, Incident Reporting | [View Incident Investigation Report ↗](https://github.com/Debby-Monroe/elastic-siem-lab) |
+| **Network Traffic Analysis** | Protocol Mechanics, Session Validation, Packet Analysis, Wireshark Filtering | [View Traffic Analysis Lab ↗](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
+| **Host Hardening & Firewalls** | Access Control Rules, Attack Surface Reduction, UFW Configuration, Zero-Trust | [View Defensive Hardening Lab ↗](https://github.com/Debby-Monroe/linux-host-hardening-ufw) |
 
 ---
 
-## Tech Stack & Lab Environment
+## 📊 Technical Skills & Lab Environments
 
 ### SIEM & Security Tools
-- Elastic Cloud
-- Kibana
-- Elastic Agent
-- Fleet Management
+* Elastic Cloud SIEM / Kibana
+* Wireshark (Packet Analysis)
+* Uncomplicated Firewall (UFW)
+* Fleet Management & Elastic Agents
 
-### Operating Systems
-- Ubuntu Linux
-- macOS
+### Operating Systems & Cloud
+* Ubuntu Linux Administration
+* macOS
+* Google Cloud Platform (GCP)
 
-### Cloud
-- Google Cloud Platform (GCP)
-
-### Languages & Scripting
-- Bash
-- Python
-
-### Networking
-- SSH
-- TCP/IP
-- Linux Authentication Logs
-
-### Frameworks
-- NIST Cybersecurity Framework (CSF)
----
-
-# 🚨 Automated Brute-Force Detection & Telemetry Pipeline (Elastic Cloud SIEM)
-
-## 🛑 Incident Investigation Report: Case Ref #2026-06-BF
-
-**Status:** Closed / Remediated
-**Severity:** Medium
-**Analyst:** Deborah Lawson (SOC Analyst)
-
----
-
-## 1. Executive Summary
-
-During this project, I built and tested a security monitoring pipeline using Elastic Cloud SIEM to detect and investigate suspicious authentication activity on an Ubuntu virtual machine.
-
-On June 29, 2026, I simulated a brute-force dictionary attack against the endpoint to understand how authentication threats appear within security telemetry. The simulation generated a spike in failed SSH login attempts, which were collected through Elastic Agent and analyzed in Kibana.
-
-The investigation identified **47 failed authentication attempts** targeting multiple user accounts. After reviewing the collected logs, I confirmed the activity matched a brute-force attack pattern. No successful login attempts were recorded, and the system remained secure throughout the simulation.
-
----
-
-## 2. Incident Timeline & Detection Details
-
-**Detection Window:**
-2026-06-29 @ 19:49:26 – 19:49:32 UTC
-
-**Events Investigated:**
-47 failed authentication attempts
-
-**Target Accounts Identified:**
-
-* `admin`
-* `guest`
-
-**Source Address:**
-`127.0.0.1` (Local simulation environment)
-
-**Affected Endpoint:**
-`deborah-lawson-qemu-virtual-machine`
-
-**Final Outcome:**
-Attack activity identified and contained. No evidence of unauthorized access.
-
----
-
-## 3. Investigation Process (Kibana KQL Analysis)
-
-To begin the investigation, I filtered authentication events within Kibana to focus specifically on failed login activity and remove unrelated system events.
-
-Query used:
-
-```kql
-event.outcome : "failure"
-```
-
-This allowed me to review authentication failures, identify targeted accounts, and analyze the behavior pattern generated by the simulated attack.
-
----
-
-## 4. Project Methodology
-
-The goal of this project was to create a realistic security monitoring workflow, from generating attack activity to investigating the resulting telemetry.
-
-### What I Built:
-
-* Connected an Ubuntu Linux endpoint to Elastic Cloud SIEM.
-* Configured Elastic Agent through Fleet for log collection.
-* Monitored Linux authentication logs (`auth.log`).
-* Simulated a dictionary-based brute-force attack.
-* Investigated security events using Kibana and KQL.
-
-### Skills Practiced:
-
-* SIEM deployment and monitoring
-* Endpoint telemetry collection
-* Linux security logging
-* Authentication event analysis
-* KQL filtering
-* Incident investigation and reporting
-
----
-
-## 5. Analyst Findings
-
-The investigation showed a pattern consistent with an automated credential attack. Multiple login attempts were generated within a short timeframe, targeting common account names rather than a single user account.
-
-The collected telemetry demonstrated how security analysts can use SIEM tools to identify abnormal authentication behavior, investigate attack patterns, and determine whether an incident resulted in compromise.
-
-In this simulation, the attack was detected successfully, and no unauthorized access was achieved.
-
----
-
-## Key Takeaway
-
-This project helped me understand the complete security monitoring process — from generating attack telemetry to investigating and documenting findings. It demonstrates my ability to work with SIEM tools, analyze security events, and translate technical data into meaningful security insights.
-
-### 🌐 [Network Traffic Analysis & Protocol Triage](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis)
-
-*   **The Mission:** Dissecting malicious packet captures (PCAPs) to identify command-and-control (C2) traffic beacons, unauthorized file exfiltration, and local network compromises.
-*   **Core Skills:** Wireshark filtering, OSI Model mapping, protocol anomaly identification.
-
+### Frameworks & Core Concepts
+* NIST Cybersecurity Framework (CSF)
+* Principle of Least Privilege / Zero-Trust
+* Incident Response & Technical Reporting
+* Linux Authentication Logging (`auth.log`)
 
 ---
 
@@ -169,11 +51,10 @@ This project helped me understand the complete security monitoring process — f
 
 > **"A security log is just a ledger waiting to be audited."**
 > 
-> My past experience taught me how to navigate strict regulatory landscapes and spot microscopic discrepancies in massive volumes of documentation. In a Security Operations Center (SOC), I apply that exact same investigative stamina. Whether it is an unmapped regulatory compliance failure or a subterranean string pattern buried in 47 failed login attempts, my objective remains identical: isolate the threat, document the footprint, and protect the organization.
+> My past experience taught me how to navigate strict regulatory landscapes and spot microscopic discrepancies in massive volumes of documentation. In a Security Operations Center (SOC), I apply that exact same investigative stamina. Whether it is an unmapped regulatory compliance failure or a subterranean string pattern buried deep inside network telemetry, my objective remains identical: isolate the threat, document the footprint, and protect the organization.
 
 ---
 
 ## 📬 Let's Connect
 
-*   **LinkedIn:** [www.linkedin.com/in/deborah-lawson-6432b936a](https://www.linkedin.com/in/deborah-lawson-6432b936a)
-*   **Professional Portfolio Index:** You are currently exploring it! Check out my repositories for raw documentation, scripts, and deployment configurations.
+* **LinkedIn:** [www.linkedin.com/in/deborah-lawson-6432b936a](https://www.linkedin.com/in/deborah-lawson-6432b936a)
