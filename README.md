@@ -1,60 +1,65 @@
 # Deborah Lawson | Cybersecurity Analyst Portfolio
 
-A results-driven professional combining a structured analytical methodology with technical threat detection, log analysis, and host hardening to secure enterprise environments.
+Security Analyst with hands-on experience in SIEM monitoring, incident investigation, network traffic analysis, and Linux security. Through self-built security labs, I have developed practical experience in threat detection, log analysis, packet inspection, attack surface assessment, and security reporting.
 
----
+This portfolio showcases projects demonstrating practical skills in:
 
-# Security Analyst & Compliance-Driven Defender 🔍🛡️
-
-Welcome to my cybersecurity portfolio.
-
-I am a detail-oriented Security Analyst focused on threat detection, security operations, and compliance-driven defense. With a professional background in high-stakes banking operations, complex corporate workflows, and structured risk analysis, I bring a strong foundation in identifying anomalies, investigating operational risks, and maintaining data integrity in regulated environments.
-
-I have expanded this analytical foundation into cybersecurity by completing the **Google Cybersecurity Professional Certificate** and developing hands-on experience through self-engineered security environments. My projects involve building cloud-based SIEM solutions, configuring host defense policies, inspecting packet captures, and analyzing raw security telemetry.
-
-I approach cybersecurity through a dual lens: understanding the technical mechanics behind threats while evaluating their broader business and operational impact. My focus is transforming security data into actionable intelligence that helps organizations detect threats, strengthen controls, and improve overall security resilience.
+- SIEM Monitoring & Incident Response
+- Network Traffic Analysis
+- Attack Surface Assessment
+- Linux Host Hardening
+- Threat Detection & Log Analysis
 
 ---
 
 ## 🚀 Featured Cybersecurity Projects
 
-| Project Focus | Technical Competencies | Live Documentation |
+| Project Focus | Technical Competencies | Repository |
 | :--- | :--- | :--- |
-| **SIEM & Incident Investigation** | Elastic Cloud SIEM, Log Ingestion, KQL, Threat Isolation, Incident Reporting | [View Incident Investigation Report ↗](https://github.com/Debby-Monroe/elastic-siem-lab) |
-| **Network Traffic Analysis** | Protocol Mechanics, Session Validation, Packet Analysis, Wireshark Filtering | [View Traffic Analysis Lab ↗](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
-| **Host Hardening & Firewalls** | Access Control Rules, Attack Surface Reduction, UFW Configuration, Zero-Trust | [View Defensive Hardening Lab ↗](https://github.com/Debby-Monroe/linux-host-hardening-ufw) |
+| **SIEM & Incident Investigation** | Elastic Cloud SIEM, KQL, Log Analysis, Threat Detection, Incident Reporting | [View Project](https://github.com/Debby-Monroe/elastic-siem-lab) |
+| **Network Traffic Analysis** | Wireshark, Protocol Analysis, TCP/IP, Packet Inspection, Traffic Investigation | [View Project](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
+| **Host Hardening & Firewalls** | Linux Security, UFW, Access Controls, Attack Surface Reduction | [View Project](https://github.com/Debby-Monroe/linux-host-hardening-ufw) |
+| **Attack Surface Assessment** | Nmap, Service Enumeration, Network Discovery, Risk Assessment | [View Project](https://github.com/Debby-Monroe/network-discovery-attack-surface-assessment) |
 
 ---
 
-## 📊 Technical Skills & Lab Environments
+## 📊 Technical Skills
 
-### SIEM & Security Tools
-* Elastic Cloud SIEM / Kibana
-* Wireshark (Packet Analysis)
-* Uncomplicated Firewall (UFW)
-* Fleet Management & Elastic Agents
+### Security Tools
+- Elastic Cloud SIEM
+- Kibana
+- Wireshark
+- Nmap
+- UFW (Uncomplicated Firewall)
+- Elastic Agent
+- Fleet Management
 
 ### Operating Systems & Cloud
-* Ubuntu Linux Administration
-* macOS
-* Google Cloud Platform (GCP)
+- Ubuntu Linux
+- macOS
+- Google Cloud Platform (GCP)
 
-### Frameworks & Core Concepts
-* NIST Cybersecurity Framework (CSF)
-* Principle of Least Privilege / Zero-Trust
-* Incident Response & Technical Reporting
-* Linux Authentication Logging (`auth.log`)
-
----
-
-## 📈 The Analytical Edge I Bring
-
-> **"A security log is just a ledger waiting to be audited."**
-> 
-> My past experience taught me how to navigate strict regulatory landscapes and spot microscopic discrepancies in massive volumes of documentation. In a Security Operations Center (SOC), I apply that exact same investigative stamina. Whether it is an unmapped regulatory compliance failure or a subterranean string pattern buried deep inside network telemetry, my objective remains identical: isolate the threat, document the footprint, and protect the organization.
+### Core Security Concepts
+- Incident Response
+- Threat Detection
+- Log Analysis
+- Network Security
+- Vulnerability Assessment
+- NIST Cybersecurity Framework (CSF)
+- Zero Trust
+- Principle of Least Privilege
 
 ---
 
-## 📬 Let's Connect
+## 📈 Professional Background
 
-* **LinkedIn:** [www.linkedin.com/in/deborah-lawson-6432b936a](https://www.linkedin.com/in/deborah-lawson-6432b936a)
+My background in banking and operations strengthened my investigative, compliance, and risk-analysis skills. I now apply those same analytical capabilities to cybersecurity by investigating security events, analyzing network activity, and documenting technical findings.
+
+---
+
+## 📫 Connect With Me
+
+- LinkedIn: https://www.linkedin.com/in/deborahlawson/
+- GitHub: https://github.com/Debby-Monroe
+
+---
