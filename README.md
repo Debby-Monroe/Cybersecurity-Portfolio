@@ -19,7 +19,7 @@ This portfolio showcases projects demonstrating practical skills in:
 | **SIEM & Incident Investigation** | Elastic Cloud SIEM, KQL, Log Analysis, Threat Detection, Incident Reporting | [View Project](https://github.com/Debby-Monroe/elastic-siem-lab) |
 | **Network Traffic Analysis** | Wireshark, Protocol Analysis, TCP/IP, Packet Inspection, Traffic Investigation | [View Project](https://github.com/Debby-Monroe/Wireshark-Network-Traffic-Analysis) |
 | **Host Hardening & Firewalls** | Linux Security, UFW, Access Controls, Attack Surface Reduction | [View Project](https://github.com/Debby-Monroe/linux-host-hardening-ufw) |
-| **Attack Surface Assessment** | Nmap, Service Enumeration, Network Discovery, Risk Assessment | [View Project]([https://github.com/Debby-Monroe/network-discovery-attack-surface-assessment](https://github.com/Debby-Monroe/Attack-surface-assessment-lab.) |
+| **Attack Surface Assessment** | Nmap, Service Enumeration, Network Discovery, Risk Assessment | [View Project](https://github.com/Debby-Monroe/Attack-surface-assessment-lab.) |
 
 ---
 
