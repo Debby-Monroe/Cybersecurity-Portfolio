@@ -59,7 +59,7 @@ My background in banking and operations strengthened my investigative, complianc
 
 ## 📫 Connect With Me
 
-- LinkedIn: https://www.linkedin.com/in/deborahlawson/
+- LinkedIn: www.linkedin.com/in/deborah-lawson-6432b936a
 - GitHub: https://github.com/Debby-Monroe
 
 ---
